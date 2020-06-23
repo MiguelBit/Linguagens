@@ -30,7 +30,7 @@ header{
 
 .logo-desktop a{
     color: white;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 nav.mobile{
@@ -124,6 +124,25 @@ section.javascript-text{
     padding-bottom: 15px;
 }
 
+/*Parte do PHP*/
+
+section.php-text{
+    background-color: rgb(75, 75, 75);
+}
+
+.php-text h2{
+    color: white;
+    font-size: 27px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+}
+
+.php-text p{
+    color: rgb(196, 196, 196);
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+
 @media screen and (max-width: 768px){
     .logo-desktop, nav.desktop{
         display: none;
@@ -177,6 +196,14 @@ section.javascript-text{
     }
 
     .javascript-text p{
+        text-align: center;
+    }
+
+    .php-text h2{
+        text-align: center;
+    }
+
+    .php-text p{
         text-align: center;
     }
 }
