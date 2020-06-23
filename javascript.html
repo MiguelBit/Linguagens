@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Linguagens de Programação - Home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop"><a href="#"><i class="fab fa-js"></i></a></div><!--desktop-->
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+            </nav><!--desktop-->
+
+            <nav class="mobile">
+                <div class="logo-mobile"><a href="#"><i class="fab fa-js"></i></a></div><!--mobile-->
+                <h3><i class="fa fa-bars"></i></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </header>
+    
+    <section class="javascript-text">
+        <div class="container">
+            <h2>O que é JavaScript?</h2>
+            <p>JavaScript é uma linguagem de programação criada em 1995 por Brendan Eich enquanto trabalhava na Netscape Communications Corporation. Originalmente projetada para rodar no Netscape Navigator, ela tinha o propósito de oferecer aos desenvolvedores formas de tornar determinados processos de páginas web mais dinâmicos, tornando seu uso mais agradável. Um ano depois de seu lançamento, a Microsoft portou a linguagem para seu navegador, o que ajudou a consolidar a linguagem e torná-la uma das tecnologias mais importantes e utilizadas na internet.</p>
+            <p>Embora ela tenha esse nome, não se deve confundir JavaScript com Java, linguagem de programação desenvolvida pela Sun Microsystems: antes, a linguagem criada pela Netscape recebera nomes como LiveScript e Mocha, mas, para aproveitar o grande sucesso da linguagem da Sun no mercado, os executivos da Netscape resolveram mudar o nome de sua linguagem para o atual. Entretanto, Java e Java Script são completamente diferentes e possuem propósitos diversos.</p>
+            <h2>JavaScript Atualmente</h2>
+            <p>Com o grande sucesso do JavaScript, tal tecnologia evoluiu para atender às mais diversas demandas que surgiam com a evolução da internet. Atualmente, é possível não apenas desenvolver sites e aplicativos ricos, mas também aplicativos para smartphones e até mesmo programas desktop. Conheça agora algumas tecnologias que surgiram com a evolução do JavaScript.</p>
+            <h2>JQuery</h2>
+            <p>A mais famosa biblioteca JavaScript do mercado fornece uma variação dessa linguagem com uma sintaxe mais amigável, o que simplifica a criação de aplicações. Graças ao jQuery, é possível escrever programas em JavaScript mais facilmente, pois a sintaxe original do JavaScript não é tão fácil de aprender.</p>
+            <p>O jQuery se tornou tão popular que, em muitos casos, desenvolvedores substituem totalmente o JavaScript escrito de forma nativa pelo jQuery para criar suas aplicações. Muitos dos componentes dinâmicos que você está vendo nas páginas do Canaltech foram criados graças a esta biblioteca.</p>
+        </div><!--container-->
+    </section><!--javascript-text-->
+    
+    <footer>
+        <p>Todos Direitos Reservados - Ryuunosuke</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

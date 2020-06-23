@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>Linguagens de Programação - Home</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop"><a href="#"><i class="fas fa-code"></i></a></div><!--desktop-->
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+            </nav><!--desktop-->
+
+            <nav class="mobile">
+                <div class="logo-mobile"><a href="#"><i class="fas fa-code"></i></a></div><!--mobile-->
+                <h3><i class="fa fa-bars"></i></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Python</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </header>
+
+    <section class="background"></section><!--background-->
+
+    <section class="conteudo">
+        <div class="container">
+            <h2>O que é uma linguagem de programação?</h2>
+            <p>É uma linguagem formal que, através de uma série de instruções, permite que um programador escreva um conjunto de ordens, ações consecutivas, dados e algoritmos para criar programas que controlam o comportamento físico e lógico de uma máquina.</p>
+            <p>Para explicar melhor (e com menos palavras), a linguagem de programação é um sistema de comunicação estruturado, composto por conjuntos de símbolos, palavras-chave, regras semânticas e sintáticas que permitem o entendimento entre um programador e uma máquina.</p>
+            <p>É importante enfatizar que é um erro comum usar a linguagem de programação e a linguagem de computação como sinônimos. Mas por que não devemos confundi-las?</p>
+            <p>Bem, é porque a linguagem de programação obedece a um conjunto de regras que permitem expressar as instruções que serão interpretadas pelo programador. Já a linguagem de computação inclui outras linguagens que formatam um texto, mas não podemos considerá-la uma programação em si mesma.</p>
+        </div><!--container-->
+    </section><!--conteudo-->
+    
+    <footer>
+        <p>Todos Direitos Reservados - Ryuunosuke</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>

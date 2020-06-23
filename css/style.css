@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+.container{
+    max-width: 960px;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header{
+    background-color: #333;
+    padding: 4px 0;
+}
+
+.logo-desktop{
+    float: left;
+}
+
+.logo-desktop a{
+    color: white;
+    font-size: 18px;
+}
+
+nav.mobile{
+    display: none;
+}
+
+nav.desktop{
+    float: right;
+}
+
+nav.desktop li{
+    display: inline-block;
+    padding: 0 15px;
+}
+
+nav.desktop a{
+    color: white;
+    text-decoration: none;
+}
+
+nav.desktop a:hover{
+    text-decoration: underline;
+}
+
+section.background{
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section.conteudo .container{
+    max-width: 1280px;
+}
+
+section.conteudo{
+    background: linear-gradient(rgb(75, 75, 75), rgb(54, 54, 54));
+    color: white;
+}
+
+section.conteudo h2{
+    font-size: 38px;
+    padding-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+section.conteudo p{
+    font-size: 18px;
+    max-width: 980px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 18px;
+}
+
+section.conteudo p:last-child{
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+footer{
+    background-color: rgb(49, 49, 49);
+    padding: 18px;
+    text-align: center;
+}
+
+footer p{
+    color: white;
+    font-size: 16px;
+}
+
+/*Parte do JavaScript*/
+
+
+section.javascript-text{
+    background-color: rgb(75, 75, 75);
+}
+
+.javascript-text h2{
+    color: white;
+    font-size: 27px;
+    padding-top: 25px;
+    padding-bottom: 23px;
+}
+
+.javascript-text p{
+    color: rgb(196, 196, 196);
+    font-size: 19px;
+    padding-bottom: 15px;
+}
+
+@media screen and (max-width: 768px){
+    .logo-desktop, nav.desktop{
+        display: none;
+    }
+
+    .logo-mobile a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }
+
+    nav.mobile{
+        position: relative;
+        text-align: center;
+        display: block;
+        width: 100%;
+    }
+
+    nav.mobile h3{
+        cursor: pointer;
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: white;
+    }
+
+    nav.mobile ul{
+        display: none;
+        background-color: #333;
+        position: absolute;
+        left: -2%;
+        top: 29px;
+        width: 104%;
+        text-align: center;
+    }
+
+    nav.mobile li{
+        padding: 8px 0;
+        border-top: 1px solid white;
+    }
+
+    nav.mobile a{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .javascript-text h2{
+        text-align: center;
+    }
+
+    .javascript-text p{
+        text-align: center;
+    }
+}
