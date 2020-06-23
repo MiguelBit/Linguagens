@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="css/all.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <title>PHP</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo-desktop"><a href="#"><i class="fab fa-php"></i></a></div><!--desktop-->
+            <nav class="desktop">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                </ul>
+            </nav><!--desktop-->
+
+            <nav class="mobile">
+                <div class="logo-mobile"><a href="#"><i class="fab fa-php"></i></a></div><!--mobile-->
+                <h3><i class="fa fa-bars"></i></h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="php.html">PHP</a></li>
+                </ul>
+            </nav><!--mobile-->
+            <div class="clear"></div><!--clear-->
+        </div><!--container-->
+    </header>
+    
+    <section class="php-text">
+        <div class="container">
+            <h2>O que é PHP?</h2>
+            <p>Numa explicação de poucas palavras, PHP é uma linguagem de programação utilizada por programadores e desenvolvedores para construir sites dinâmicos, extensões de integração de aplicações e agilizar no desenvolvimento de um sistema.</p>
+            <p>Essa linguagem é mundialmente conhecida e uma das mais utilizadas pela facilidade em aprendê-la, manuseá-la, além de ser compatível com quase todos os sistemas operacionais que existem – o que torna seu custo menor. Neste artigo nós vamos mostrar a importância dessa sigla, além da estrutura e vantagens dessa linguagem.</p>
+            <h2>Linguagens de Scripts</h2>
+            <p>PHP é um acrônimo recursivo para PHP: Hypertext Preprocessor (Pré-Processador de Hipertexto), que originalmente se chamava Personal Home Page (Página Inicial Pessoal).</p>
+            <p>Ele também é um subconjunto de linguagens de scripts como JavaScript e Python. A diferença é que PHP costuma ser mais usado para comunicação do lado do servidor (frontend). </p>
+            <p>Enquanto isso, JavaScript pode ser usado tanto para o frontend quanto para o backend – e Python é apenas para o lado do cliente (backend).</p>
+            <p>Uma linguagem de script serve para automatizar a execução de tarefas num ambiente de tempo de execução especial. Isso inclui dizer para uma página estática (construída com HTML e CSS) para executar ações específicas com regras que você definiu anteriormente.</p>
+            <p>Por exemplo, você pode usar um script para validar uma forma de garantir que todos os campos de um formulário foram preenchidos antes que eles sejam enviados de volta para o servidor.</p>
+            <h2>Conclusão</h2>
+            <p>PHP é uma linguagem de script do tipo server-side com diversos propósitos. Porém, ela é principalmente utilizada para gerar conteúdos dinâmicos num site.</p>
+            <p>Trata-se de uma linguagem altamente popular devido à sua natureza de código aberto e suas funcionalidades versáteis. Ela é simples o suficiente para novatos, mas programadores profissionais podem também usá-la para recursos mais avançados.</p>
+            <p>Aprender e entender PHP indubitavelmente irá melhorar as suas habilidades de desenvolvedor – você poderá criar qualquer tipo de website que desejar, se tornar um desenvolvedor WordPress habilidoso e até mesmo criar uma aplicação para web um dia!</p>
+        </div><!--container-->
+    </section><!--php-text-->
+    
+    <footer>
+        <p>Todos Direitos Reservados - Ryuunosuke</p>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script>
+        $(function(){
+            $('nav.mobile h3').click(function(){
+                $('nav.mobile ul').slideToggle();
+            })
+        })
+    </script>
+</body>
+</html>
